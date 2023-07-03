@@ -8,4 +8,5 @@
 
 # step 2
 
-前往ublock的官方仓库的发行页： https://github.com/gorhill/uBlock/releases ，直接点击： uBlock0_版本号.firefox.signed.xpi ，firefox 便会自动安装它。
+前往ublock的官方仓库的发行页： <a href="https://github.com/gorhill/uBlock/releases" target="_blank">uBlock releases</a> ,
+直接点击： uBlock0_版本号.firefox.signed.xpi ，firefox 便会自动安装它。
