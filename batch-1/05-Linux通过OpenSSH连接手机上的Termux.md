@@ -30,9 +30,11 @@ pkg install openssh
 
 <br>
 
-- 登录手机Tmux端:
++ 登录手机Tmux端:
   - ssh 手机Tmux端IP地址 -p 8022
+    
   <br>
+  
   - ssh -p 8022 手机Tmux端IP地址 
 
 
