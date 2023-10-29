@@ -31,7 +31,7 @@ code --install-extension vscjava.vscode-java-pack;
 
 {
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "Consolas",
   "workbench.iconTheme": "vscode-icons",
   "editor.fontLigatures": false,
 
@@ -82,6 +82,9 @@ code --install-extension vscjava.vscode-java-pack;
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
+  // "[xml]": {
+  //   "editor.defaultFormatter": "redhat.vscode-xml"
+  // },
   
   "redhat.telemetry.enabled": true,
 
@@ -106,12 +109,24 @@ code --install-extension vscjava.vscode-java-pack;
     "**/dist/**": true
   },
 
-  "terminal.integrated.fontSize": 20,
-  "terminal.integrated.fontFamily": "Liberation Mono",
+  "terminal.integrated.fontSize": 22,
   "terminal.integrated.cursorBlinking": true,
   "explorer.confirmDelete": false, //终端光标闪烁
   "update.showReleaseNotes": false,
-  "editor.fontVariations": false
+  "editor.fontVariations": false,
+  "vsicons.dontShowNewVersionMessage": true,
+
+  "cmake.cmakePath": "C:\\WARE\\CMAKE\\cmake-3.28.0-rc3-windows-x86_64\\bin\\cmake.exe",
+  "C_Cpp.default.compilerPath": "C:\\DIR001\\mingw64\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+
+  "cmake.generator": "MinGW Makefiles",
+  "debug.console.fontSize": 20,
+  "debug.console.fontFamily": "Consolas",
+  "cmake.configureOnOpen": true,
+  "terminal.integrated.fontFamily": "Consolas",
+  "terminal.integrated.fontWeight": "normal" 
+
+
 }
 
 
