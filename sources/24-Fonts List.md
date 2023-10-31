@@ -6,7 +6,8 @@
 - Belshaw-Donut-Robot
 - BPmono
 - Camingo-Code
-- cn-fontfaces
+- Cascadia Mono
+- JetBrains Mono
 - Dank-Mono-Regular
 - Espresso-Mono
 - Fantasque-Sans-Mono
