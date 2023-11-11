@@ -20,7 +20,7 @@ dir_name="/media/memory";
 
 if mount | grep -q "$partition on $dir_name"; then 
  	echo "业已Mount";
- 	google-chrome --user-data-dir=$dir_name/Program-Files/browser-temporaries/GoogleChrome/LinuxUserData/Default;
+ 	google-chrome --user-data-dir=$dir_name/browsers/GoogleChrome/LinuxUserData/Default;
 else 
 	echo "尚未Mount, please: sudo mount /dev/sda6 "$dir_name; 
 fi
