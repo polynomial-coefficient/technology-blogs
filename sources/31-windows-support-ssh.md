@@ -99,7 +99,7 @@ sc query sshd
 
 <hr>
 
-
+## 配置SSHD
 
 1. 以管理员身份打开 CMD 或 PowerShell。
 
@@ -125,6 +125,7 @@ PasswordAuthentication yes
 Restart-Service sshd
 ```
 
+<hr>
 
 # 查看本机ip地址：
 ```
@@ -144,3 +145,6 @@ echo %username%
 ```
 ssh -v %username%@IPv4Address
 ```
+
+
+<hr>
