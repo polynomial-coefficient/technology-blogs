@@ -100,6 +100,32 @@ sc query sshd
 <hr>
 
 
+
+1. 以管理员身份打开 CMD 或 PowerShell。
+
+  
+2. 使用以下命令生成SSH密钥对：
+
+    ```
+    ssh-keygen -t rsa -b 2048
+    ```
+
+3. 编辑`sshd_config`文件
+`sshd_config`文件位置：通常在`c:\ProgramData\ssh\`
+* 编辑`sshd_config`文件可能需要管理员权限。确保以管理员身份运行编辑器，例如使用文本编辑器打开时右键选择“以管理员身份运行”。
+* 或者可以在其他普通位置上创建1个`sshd_config`文件，复制原来的`sshd_config`文件中的内容粘贴至普通的`sshd_config`文件，编辑，然后用普通的`sshd_config`文件替换掉原来的`sshd_config`文件。
+
+在`sshd_config`中，你可以配置各种SSH服务器的参数，包括身份验证方法、端口号等。确保密码身份验证没有被禁用：
+```
+PasswordAuthentication yes
+```
+4.在修改配置文件后，记得重新启动SSH服务，以使更改生效。在PowerShell中，你可以使用以下命令：
+
+```
+Restart-Service sshd
+```
+
+
 # 查看本机ip地址：
 ```
 
@@ -116,5 +142,5 @@ echo %username%
 
 # 登录:
 ```
-ssh %username%@IPv4Address
+ssh -v %username%@IPv4Address
 ```
