@@ -12,11 +12,6 @@ Windows必须事先设置好密码，否则届时登录Windows时会报密码错
 
 - https://github.com/PowerShell/Win32-OpenSSH/releases
 
-<br>
-
-- https://gitee.com/through-git/through-blogs/raw/master/packages/OpenSSH-Win64.zip
-
-
 <hr>
 
 
@@ -87,7 +82,7 @@ net start sshd
 
 查看本机的 22 端口是否被监听
 ```
-netstat -ano | findstr "22"
+netstat -ano | findstr :22
 
 ```
 
